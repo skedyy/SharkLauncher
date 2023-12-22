@@ -1,0 +1,14 @@
+{
+  "name": "sharklauncher",
+  "version": "1.0.0",
+  "description": "A minecraft launcher for Shark servers.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "author": "skedyy_",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.1.0"
+  }
+}
