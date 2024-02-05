@@ -1,14 +1,32 @@
 {
-  "name": "sharklauncher",
+  "build": {
+    "appId": "SharkLauncher",
+    "asar": true,
+    "win": {
+      "target": "NSIS",
+      "icon": "src/assets/img/smallpng2.png"
+    }
+  },
+  "name": "SharkLauncher",
   "version": "1.0.0",
   "description": "A minecraft launcher for Shark servers.",
   "main": "src/index.js",
   "scripts": {
-    "test": "electron ."
+    "test": "electron .",
+    "build": "electron-builder",
+    "build-windows": "electron-builder -w"
   },
   "author": "skedyy_",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^28.1.0"
+    "electron": "^28.1.0",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1",
+    "electron-store": "^8.1.0",
+    "graceful-fs": "^4.2.11",
+    "minecraft-launcher-core": "^3.17.3",
+    "msmc": "^4.1.0"
   }
 }
