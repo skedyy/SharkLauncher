@@ -39,7 +39,7 @@ app.whenReady().then(() => {
                 preload: path.join(__dirname, "preload.js"),
             }
         })
-        window.setMenuBarVisibility(true)
+        window.setMenuBarVisibility(false)
         window.loadFile(path.join(__dirname,'html/main.html'))
         console.log(javawpath)
     }
